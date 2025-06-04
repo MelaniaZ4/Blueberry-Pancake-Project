@@ -82,6 +82,7 @@
             display: block;
             margin: 0 auto;
             max-width: 500px;
+            text-align: center;
         }
 
         .link:hover {
@@ -94,26 +95,35 @@
             text-decoration: none;
         }
 
-        .form-container {
+        #form-container {
+            background-color: #f7ece7;
+            border-radius: 5%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             display: none;
+            margin: 20px auto;
+            text-align: center;
         }
 
          .form-group {
             margin-bottom: 1em;
         }
 
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
         label {
             color: #583d72;
+            font-weight: 500;
         }
 
         input {
-            width: 95%;
             padding: 0.5em;
-            margin-top: 0.25em;
-            margin-bottom: 10px;
+            margin: 0 auto;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
+            }
                 
         button {
             display: block;
@@ -170,7 +180,7 @@
             <br />
             <p class="learnMore">
                 Learn more about
-                <a href="https://en.wikipedia.org/wiki/Blueberry" target="_blank" class="link" hover>Blueberries</a> on
+                <a href="https://en.wikipedia.org/wiki/Blueberry" target="_blank" class="link" hover><b><i>Blueberries</i></b></a> on
                 Wikipedia.
             </p>
         </div>
@@ -180,6 +190,7 @@
         <button id="get-recipe-btn">👉 Get Recipe</button>
 
         <div id="form-container">
+            <p>Enter your contact details here. The recipe will be emailed to you!</p>
             <form id="recipe-form">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
